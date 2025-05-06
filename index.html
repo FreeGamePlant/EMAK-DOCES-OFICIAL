@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMAK DOCES</title>
+
+    <style>
+        body {
+    background-color: rgb(255, 114, 161);
+}
+
+h1 {
+    color: rgb(83, 40, 0);
+    text-align: center;
+    font-family: cursive;
+    background-color: white;
+    border: solid 2px rgb(83, 40, 0);
+}
+
+a {
+    color: rgb(83, 40, 0);
+    text-decoration: none;
+}
+
+.s {
+    background-color: white;
+    padding: 4px;
+}
+.s:hover {
+    background-color: black;
+    color: white;
+}
+
+.l {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+}
+.l:hover {
+    background-color: black;
+    color: white;
+}
+
+.c {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+}
+.c:hover {
+    background-color: black;
+    color: white;
+}
+
+.i {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+}
+.i:hover {
+    background-color: black;
+    color: white;
+}
+
+.conteiner-alpha {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px rgb(83, 40, 0);
+    position: relative;
+    top: -23px;
+    background-color: white;
+    padding: 5px;
+    word-spacing: 5px;
+    flex-wrap: wrap;
+}
+
+.f {
+    background-color: rgb(255, 209, 209);
+}
+
+#sobre {
+    background-color: #ffffff;
+    border: dashed 5px rgb(255, 0, 0);
+    padding: 5px;
+    word-spacing: 5px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: solid 5px rgb(255, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    background-color: white;
+}
+
+h2 {
+    color: rgb(83, 40, 0);
+    text-align: center;
+    font-family: cursive;
+    background-color: white;
+    border: solid 2px rgb(83, 40, 0);
+}
+
+.esquerda {
+    display: inline-block;
+    background-color: violet;
+    border: solid 2px rgb(83, 40, 0);
+    padding: 10px;
+    border-radius: 45%;
+    margin: 0 auto;
+    position:absolute;
+    left: 1%;
+}
+
+.direita {
+    display: inline-block;
+    background-color: violet;
+    border: solid 2px rgb(83, 40, 0);
+    padding: 10px;
+    border-radius: 45%;
+    margin: 0 auto;
+    align-items: right;
+    justify-self: end;
+    position: absolute;
+    right: 1%;
+}
+
+.ok {
+    display: inline-block;
+    background-color: violet;
+    border: solid 2px rgb(83, 40, 0);
+    padding: 10px;
+    border-radius: 45%;
+    margin: 0 auto;
+    align-items: center;
+    justify-self: center;
+    position: absolute;
+    top: 24px;
+}
+.ok:hover {
+    background-color: black;
+    color: white;
+}
+
+#alpha {
+    position:absolute;
+    top: 535px;
+}
+
+#beta {
+    position:absolute;
+    top: 535px;
+}
+
+#charle {
+    position:absolute;
+    top: 930px;
+}
+
+#delta {
+    position:absolute;
+    top: 930px;
+}
+
+.align {
+    text-align: center;
+}
+
+
+button {
+    font-family: cursive;
+    font-size: 30px;
+    width: 80px;
+}
+
+#echo {
+    position:absolute;
+    top: 1330px;
+}
+
+#foxtrot {
+    position:absolute;
+    top: 1330px;
+}
+
+
+
+
+/* Animação para desaparecer e aparecer */
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Definição das animações */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    z-index: 1;
+}
+
+.card-b {
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+}
+.card-b:hover {
+    background-color: rgb(43, 255, 0);
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    background-color: white;
+}
+
+
+.titulo-escondido {
+    position: relative;
+    top: 22px;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.botão-hover-de-ver-o-desenvolimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border: solid 2px rgb(83, 40, 0);
+    background-color: rgb(217, 255, 0);
+    color: rgb(217, 255, 0);
+}
+.botão-hover-de-ver-o-desenvolimento:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+
+    .titulo-escondido {
+        display: none;
+    }
+}
+
+.botão-hover-de-ver-o-desenvolimento:hover + .titulo-escondido {
+    display: none;
+}
+
+.hidden {
+    top: -100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000px;
+}
+
+.copyright {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(83, 40, 0);
+    padding: 10px;
+    color: rgb(217, 255, 0);
+}
+    </style>
+</head>
+<body>
+    <h1>EMAK DOCES CONFEITARIA</h1>
+
+    <div class="conteiner-alpha">    
+        <a href="sobre.html" class="s">Sobre nós</a>
+        <a href="https://maps.app.goo.gl/yiDccpFEXkhCpHXS6" class="l" target="_blank">Localização</a>
+        <a class="c">Contato : 48 99165-2058</a>
+        <a href="https://www.threads.com/@emak_doces?xmt=AQGzUXo4q212_oANC7wBJuychwciswhXmAb8zpHJPRCcmTU" class="i" target="_blank">INSTAGRAM</a>
+    </div>
+
+    <h2>❤️ Feito com Amor e Carinho ❤️</h2>
+
+
+    <div class="container">
+        <div class="card">
+            <img id="imagem-bolos" src="bolo1.jpg" alt="Bolos">
+            <h2>Bolos</h2>
+            <button id="alpha" class="esquerda" onclick="trocarImagemBolos(-1)"><</button>
+            <button id="beta" class="direita" onclick="trocarImagemBolos(1)">></button>
+        </div>
+        <div class="card">
+            <img id="imagem-doces" src="doc.jpg" alt="Doces">
+            <h2>Doces</h2>
+            <button id="charle" class="esquerda" onclick="trocarImagemDoces(-1)"><</button>
+            <button id="delta" class="direita" onclick="trocarImagemDoces(1)">></button>
+        </div>
+        <div class="card">
+            <img id="imagem-pizzas" src="p.jpg" alt="salgados">
+            <h2>Salgados</h2>
+            <button id="echo" class="esquerda" onclick="trocarImagemPizzas(-1)"><</button>
+            <button id="foxtrot" class="direita" onclick="trocarImagemPizzas(1)">></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-b">
+            <div class="contato">
+                    <h2>Contato</h2>
+                    <p>Para encomendas e informações, entre em contato conosco:</p>
+                    <p>Telefone: 48 99165-2058</p>
+                    <p>Email:andreiadepa2017@gmail.com</p>
+                    <p>Instagram: @emak_doces</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-c">
+            <div class="localizacao">
+                <h2>Localização</h2>
+                <p>Estamos localizados em Palhoça, SC.</p>
+                <p>Você pode nos encontrar facilmente através do Google Maps.</p>
+                <iframe class="mapa"
+                title="Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.123456789!2d-48.6345161!3d-27.8247543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95272fde624928ff%3A0x83c53880513db6a6!2sEmak!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="titulo-escondido">
+        <h2>EMAK DOCES ©</h2>
+    </div>
+
+    <div class="botão-hover-de-ver-o-desenvolimento">
+        <h3 class="copyright">copyright © 05 / 05 / 2025 All Rights Reserved</h3>
+        <h3 class="copyright">Autor do site : Andreia Depa (EMAK)</h3>
+        <h3 class="copyright">Desenvolvedor : Elai Leonel Figueroa (FGP)</h3>
+    </div>
+    <script>
+
+        console.log("BEM VINDO A EMAK DOCES!")
+        alert("BEM VINDO A EMAK DOCES WEB!")
+
+
+
+    // Listas de imagens para cada card
+        const imagensBolos = [
+            "bolo1.jpg",
+            "bolo2.jpg",
+            "bolo3.jpg",
+            "bolo4.jpg",
+            "bolo5.jpg",
+            "bolo6.jpg",
+            "bolo7.jpg",
+            "bolo8.jpg",
+            "bolo9.jpg",
+            "bolo10.jpg",
+            "bolo11.jpg",
+            "bolo12.jpg",
+            "bolo13.jpg",
+            "bolo14.jpg",
+            "bolo15.jpg",
+        ];
+        
+        const imagensDoces = [
+            "doc.jpg",
+            "o.jpg",
+            "o2.jpg",
+            "pudim.jpg"
+        ];
+        
+        // Índices atuais para cada card
+        let indiceBolos = 0;
+        let indiceDoces = 0;
+        
+        // Função para trocar imagens no card de Bolos
+        function trocarImagemBolos(direcao) {
+            const imgElement = document.getElementById("imagem-bolos");
+            indiceBolos = (indiceBolos + direcao + imagensBolos.length) % imagensBolos.length;
+            imgElement.src = imagensBolos[indiceBolos];
+        }
+        
+        // Função para trocar imagens no card de Doces
+        function trocarImagemDoces(direcao) {
+            const imgElement = document.getElementById("imagem-doces");
+            indiceDoces = (indiceDoces + direcao + imagensDoces.length) % imagensDoces.length;
+            imgElement.src = imagensDoces[indiceDoces];
+        }
+
+
+        // Lista de imagens para o card de Pizzas
+const imagensPizzas = [
+    "p.jpg",
+    "p2.jpg",
+    "p3.jpg",
+    "p4.jpg",
+    "p5.jpg",
+    "s.jpg"
+];
+
+// Índice atual para o card de Pizzas
+let indicePizzas = 0;
+
+// Função para trocar imagens no card de Pizzas
+function trocarImagemPizzas(direcao) {
+    const imgElement = document.getElementById("imagem-pizzas");
+    indicePizzas = (indicePizzas + direcao + imagensPizzas.length) % imagensPizzas.length;
+    imgElement.src = imagensPizzas[indicePizzas];
+}
+
+
+// Função para trocar imagens no card de Bolos
+function trocarImagemBolos(direcao) {
+    console.log("Imagem foi trocada")
+    const imgElement = document.getElementById("imagem-bolos");
+
+    // Adiciona a classe de fade-out
+    imgElement.classList.add("fade-out");
+
+    // Aguarda o término da animação para trocar a imagem
+    setTimeout(() => {
+        indiceBolos = (indiceBolos + direcao + imagensBolos.length) % imagensBolos.length;
+        imgElement.src = imagensBolos[indiceBolos];
+
+        // Remove a classe de fade-out e adiciona a de fade-in
+        imgElement.classList.remove("fade-out");
+        imgElement.classList.add("fade-in");
+
+        // Remove a classe de fade-in após a animação
+        setTimeout(() => {
+            imgElement.classList.remove("fade-in");
+        }, 500); // Duração da animação
+    }, 500); // Duração da animação
+}
+
+// Função para trocar imagens no card de Doces
+function trocarImagemDoces(direcao) {
+    console.log("Imagem foi trocada")
+    const imgElement = document.getElementById("imagem-doces");
+
+    // Adiciona a classe de fade-out
+    imgElement.classList.add("fade-out");
+
+    // Aguarda o término da animação para trocar a imagem
+    setTimeout(() => {
+        indiceDoces = (indiceDoces + direcao + imagensDoces.length) % imagensDoces.length;
+        imgElement.src = imagensDoces[indiceDoces];
+
+        // Remove a classe de fade-out e adiciona a de fade-in
+        imgElement.classList.remove("fade-out");
+        imgElement.classList.add("fade-in");
+
+        // Remove a classe de fade-in após a animação
+        setTimeout(() => {
+            imgElement.classList.remove("fade-in");
+        }, 500); // Duração da animação
+    }, 500); // Duração da animação
+}
+
+// Função para trocar imagens no card de Pizzas
+function trocarImagemPizzas(direcao) {
+    console.log("Imagem foi trocada");
+    const imgElement = document.getElementById("imagem-pizzas");
+
+    // Adiciona a classe de fade-out
+    imgElement.classList.add("fade-out");
+
+    // Aguarda o término da animação para trocar a imagem
+    setTimeout(() => {
+        indicePizzas = (indicePizzas + direcao + imagensPizzas.length) % imagensPizzas.length;
+        imgElement.src = imagensPizzas[indicePizzas];
+
+        // Remove a classe de fade-out e adiciona a de fade-in
+        imgElement.classList.remove("fade-out");
+        imgElement.classList.add("fade-in");
+
+        // Remove a classe de fade-in após a animação
+        setTimeout(() => {
+            imgElement.classList.remove("fade-in");
+            imagensPizzas[indicePizzas];
+        }, 500); // Duração da animação
+    }, 500); // Duração da animação
+}
+
+// Seleciona os elementos
+const botaoHover = document.querySelector('.botão-hover-de-ver-o-desenvolimento');
+const tituloEscondido = document.querySelector('.titulo-escondido');
+
+// Evento para hover (passar o mouse)
+botaoHover.addEventListener('mouseover', () => {
+    tituloEscondido.classList.add('hidden');
+});
+
+// Evento para quando o mouse sair da área
+botaoHover.addEventListener('mouseout', () => {
+    tituloEscondido.classList.remove('hidden');
+});
+
+// Evento para clique
+botaoHover.addEventListener('mousedown', () => {
+    tituloEscondido.classList.add('hidden');
+});
+
+// Evento para soltar o clique
+botaoHover.addEventListener('mouseup', () => {
+    tituloEscondido.classList.remove('hidden');
+});
+
+
+// Eventos para toque em dispositivos móveis
+botaoHover.addEventListener('touchstart', () => {
+    tituloEscondido.classList.add('hidden');
+});
+
+botaoHover.addEventListener('touchend', () => {
+    tituloEscondido.classList.remove('hidden');
+});
+
+console.log("Copyright © 05 / 05 / 2025 All Right Reserved")
+console.log("Autor do site : Andreia Depa (EMAK)")
+console.log("Desenvolvedor : Elai Leonel Figueroa (FGP)")
+console.log("As Imagens dos produtos são reais da Emak, e foram tiradas por Andreia Depa, as imagens de seu produto possuem direitos autorais, e não podem ser usadas sem autorização, apenas é permitido o dowload/print para mostrar a sua referencia de pedido para a confeiteira, e não para fins comerciais, ou de uso pessoal, sem autorização da confeiteira.")
+    </script>
+</body>
+</html>
